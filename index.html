@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!--
+:: Generator liter oraz kategorii do gry Państwa - Miasta na Dzień Patrona ZSE w Zduńskiej Woli.
+:: Autor: Dawid Sadowski
+
+:: Wszelkie komentarze poniżej można usuwać.
+-->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Państwa Miasta - Generator Liter</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed|Oswald|Quicksand" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<!--
+   DODANIE W TAGU BODY PONIŻSZEGO ATRYBUTU USUWA POCZĄTKOWE OKIENKO
+   onload="acceptLetters()"
+-->
+<body onkeypress="findHotkey(e)">
+
+<div id="lettersBackground">
+    <div id="lettersWindow">
+        <div id="lWElements">
+            <div id="lWText">Wprowadź zestaw liter, którymi chcesz grać:</div>
+            <div id="lWInput"><label><input id="input" type="text" onkeypress="testLetter(e)" autofocus/></label></div>
+            <div id="lWButton">
+                <button onclick="acceptLetters()">Zatwierdź</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drawCatsApp">
+    <div id="layer" onclick="drawCategories()"></div>
+    <div id="categories">
+        <table class="tg">
+            <tr>
+                <th class="tg-yw4l">Kliknij tutaj, aby wylosować kategorie</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="drawLotsApp">
+    <div id="drawedLot">
+        <div id="rString">Runda<span id="round">: 1</span></div>
+        <div id="dLString">Wylosowana litera:</div>
+        <div id="letter">(wciśnij przycisk <b>Losuj</b> w celu rozpoczęcia)</div>
+    </div>
+
+    <div id="button">
+        <button id="draw_letter" class="button" onclick="drawLots()" disabled>
+            Losuj <span class="hotkey">[SPACJA] </span></button>
+        <button id="report_readiness" class="button" onclick="reportReadiness()" disabled>
+            Zgłoś gotowość <span class="hotkey">[ENTER]</span></button>
+    </div>
+
+    <div id="lots">Wykorzystane litery:
+        <div id="letters">[tutaj pojawią się wylosowane litery]</div>
+    </div>
+</div>
+<div id="copyright">&copy; 2017 Dawid Sadowski</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

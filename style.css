@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    background-color: #333;
+}
+
+#lettersBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#lettersWindow {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 450px;
+    height: 125px;
+    background-color: white;
+    z-index: 1000;
+}
+
+#lWElements {
+    position: relative;
+    top: 18px;
+}
+
+#lWText {
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+
+#lWInput {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#lWInput input {
+    text-transform: uppercase;
+    text-align: center;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #444;
+    outline: none;
+    transition: 0.3s;
+}
+
+#lWInput input:focus {
+    border-bottom: 1px solid #000;
+}
+
+#lWButton {
+    padding-top: 7px;
+    padding-bottom: 4px;
+}
+
+#lWButton button {
+    background-color: #444; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#lWButton button:focus {
+    background-color: #222;
+}
+
+#lWButton button:hover {
+    cursor: pointer;
+}
+
+#drawCatsApp {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 25px;
+    background-color: #fff;
+}
+
+#drawLotsApp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#drawedLot {
+    text-align: center;
+}
+
+#drawedLot {
+    height: 450px;
+    width: 450px;
+    background-color: #111;
+}
+
+#rString {
+    padding-top: 4px;
+    font-size: 20px;
+}
+
+#dLString {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 40px;
+}
+
+#letter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+#rLetter {
+    font-size: 200px;
+}
+
+#button {
+    background-color: #111;
+    width: 450px;
+}
+
+#button button {
+    position: relative;
+    width: 50%;
+    height: 35px;
+}
+
+#lots {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+#copyright {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    color: #666;
+    transition: 0.4s;
+}
+
+#copyright:hover {
+    cursor: default;
+    color: #bbb;
+}
+
+.hotkey {
+    color: #777;
+}
+
+.hide {
+    display: none;
+}
+
+#layer {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #bbb;
+    opacity: 0;
+}
+
+#layer:hover {
+    color: #231;
+    cursor: pointer;
+}
+
+#draw_letter {
+    float: left;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #ccc;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #ccc;
+    color: #333;
+    background-color: #fff;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #ccc;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.tg .tg-yw4l {
+    vertical-align: top
+}
